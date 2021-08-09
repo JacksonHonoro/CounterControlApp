@@ -1,11 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 import { Container } from './styles';
 
 const Counters: React.FC = () => (
   <Container>
-    <View />
+    <Text style={{ color: '#000' }}>Counters</Text>
   </Container>
 );
 

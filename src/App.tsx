@@ -1,10 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+
+import Routes from '@/routes';
 
 const App: React.FC = () => (
-  <View>
-    <View />
-  </View>
+  <SafeAreaView style={{ flex: 1 }}>
+    <Routes />
+  </SafeAreaView>
 );
 
 export default App;
