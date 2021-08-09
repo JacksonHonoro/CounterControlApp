@@ -1,11 +1,15 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-import { Container } from './styles';
+import CounterCard from '@/shared/components/CounterCard';
+
+import { Container, ScrollView } from './styles';
 
 const Counters: React.FC = () => (
   <Container>
-    <Text style={{ color: '#000' }}>Counters</Text>
+    <ScrollView contentContainerStyle={{ alignItems: 'flex-end' }}>
+      <CounterCard counterName="0008" counterSequence={1} />
+      <CounterCard counterName="0018" counterSequence={2} />
+    </ScrollView>
   </Container>
 );
 
