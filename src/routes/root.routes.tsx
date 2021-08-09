@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 const RootRoutes: React.FC = () => (
   <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="tabRoutes" component={TabRoutes} />
+      <Stack.Screen name="TabRoutes" component={TabRoutes} />
     </Stack.Navigator>
   </NavigationContainer>
 );
