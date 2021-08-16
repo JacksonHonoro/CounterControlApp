@@ -1,15 +1,21 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   height: 130px;
   width: 90%;
   border-width: 2px;
   border-color: #14437a;
   border-radius: 4px;
   padding: 8px;
-  background-color: #d8d8d8;
+  background: #d8d8d8;
   margin-bottom: 24px;
   justify-content: space-between;
+
+  ${props =>
+    props.checked &&
+    css`
+      background: #fff;
+    `}
 `;
 
 export const CounterSequence = styled.Text`
