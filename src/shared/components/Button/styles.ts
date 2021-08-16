@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.TouchableOpacity`
   width: 30%;
   height: 50px;
-  background: #aaa;
+  background: #888;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
