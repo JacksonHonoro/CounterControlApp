@@ -27,7 +27,8 @@ const counterControlStore = createSlice({
       const findCounterIndex = state.counters.findIndex(
         element => action.payload.counterValue === element.counterValue,
       );
-      if (!findCounterIndex) {
+
+      if (findCounterIndex >= 0) {
         state.counters.splice(findCounterIndex, 1);
         Alert.alert('Contador removido!');
       } else {
