@@ -43,8 +43,8 @@ const counterControlStore = createSlice({
       const findCounterIndex = state.counters.findIndex(
         element => action.payload === element.counterValue,
       );
-      console.log(findCounterIndex);
-      if (findCounterIndex) {
+
+      if (findCounterIndex >= 0) {
         state.counters[findCounterIndex].checked =
           !state.counters[findCounterIndex].checked;
       }
