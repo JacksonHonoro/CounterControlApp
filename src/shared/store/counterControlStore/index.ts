@@ -13,7 +13,7 @@ const counterControlStore = createSlice({
       );
 
       if (!findCounter) {
-        state.counters.unshift(action.payload);
+        state.counters.push(action.payload);
         Alert.alert('Contador adicionado!');
       } else {
         Alert.alert(
